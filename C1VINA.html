@@ -1,0 +1,103 @@
+Upgrade Latihan 6 (yang hanya operasi tambah) dengan operasi kurang, kali, bagi, dan modulus. Tidak ada video tutorial, silahkan kalian berkreasi dengan coding! Happy Challenge!
+<hr>
+<h3>Kalkulator Upgrade</h3>
+<hr>
+<br><label>Angka1&emsp;</label><input id="input1" /></br>
+<br><label>Angka2&emsp;</label><input id="input2" /></br>
+<br><label>Operasi&emsp;</label>
+<button onclick="Tambah()">+</button>
+<button onclick="Kurang()">-</button>
+<button onclick="Bagi ()">/</button>
+<button onclick="Kali ()">*</button>
+<button onclick="Modulus ()">%</button></br>
+<br><label><b>&emsp;= &emsp;&emsp;</b></label><label> </label><label id ="hasil">Hasil</label></input>
+
+
+
+<script>
+    function Tambah () {
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let hasil;
+
+        input1 = parseInt(input1);
+        input2 = parseInt(input2);
+
+        if(!isNaN(input1) && !isNaN(input2)){
+           hasil = input1 + input2;
+        }else{
+        hasil = 'nilai input invalid'
+        }
+
+        document.getElementById('hasil').innerHTML=hasil;
+        console.log(typeof input1,typeof input2,hasil);
+    }
+    function Kurang (){
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let hasil;
+
+        input1 = parseInt(input1);
+        input2 = parseInt(input2);
+
+        if(!isNaN(input1) && !isNaN(input2)){
+           hasil = input1 - input2;
+        }else{
+        hasil = 'nilai input invalid'
+        }
+
+        document.getElementById('hasil').innerHTML=hasil;
+        console.log(typeof input1,typeof input2, hasil);
+    }
+    function Bagi (){
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let hasil;
+
+        input1 = parseInt(input1);
+        input2 = parseInt(input2);
+
+        if(!isNaN(input1) && !isNaN(input2)){
+           hasil = input1 / input2;
+        }else{
+        hasil = 'nilai input invalid'
+        }
+
+        document.getElementById('hasil').innerHTML=hasil;
+        console.log(typeof input1,typeof input2, hasil);
+    }
+    function Kali (){
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let hasil;
+
+        input1 = parseInt(input1);
+        input2 = parseInt(input2);
+
+        if(!isNaN(input1) && !isNaN(input2)){
+           hasil = input1 * input2;
+        }else{
+        hasil = 'nilai input invalid'
+        }
+
+        document.getElementById('hasil').innerHTML=hasil;
+        console.log(typeof input1,typeof input2, hasil);
+    }
+    function Modulus (){
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let hasil;
+
+        input1 = parseInt(input1);
+        input2 = parseInt(input2);
+
+        if(!isNaN(input1) && !isNaN(input2)){
+           hasil = input1 % input2;
+        }else{
+        hasil = 'nilai input invalid'
+        }
+
+        document.getElementById('hasil').innerHTML=hasil;
+        console.log(typeof input1,typeof input2, hasil);
+    }
+</script>
